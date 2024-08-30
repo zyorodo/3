@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.float-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    float: left;
+    margin-right: 20px; /* Espaçamento entre a caixa flutuante e as caixas sobrepostas */
+    text-align: center;
+    line-height: 100px;
+}
+
+.zindex-box1, .zindex-box2 {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    text-align: center;
+    line-height: 100px;
+}
+
+.zindex-box1 {
+    background-color: lightcoral;
+    z-index: 10; /* Menor prioridade de sobreposição */
+}
+
+.zindex-box2 {
+    background-color: lightgreen;
+    z-index: 20; /* Maior prioridade de sobreposição */
+    left: 30px; /* Movendo para a direita para que fique visível sobre a caixa anterior */
+}
